@@ -6,11 +6,12 @@ const ConnectToDb = async () => {
   // Since callback is deprecated from mongoose.connect should need to use this method.
   try {
     await mongoose.connect(process.env.mongo_connection);
-
     console.log("connected to database");
   } catch (error) {
     console.log(error);
+    
   }
+
 };
 
 // Exporting the module

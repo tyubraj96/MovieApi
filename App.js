@@ -1,6 +1,8 @@
 //Express import
 const express = require("express");
-const app = express();
+const app = express(); 
+// use is middleware
+// express.json() parse/serialize raw data into json format
 app.use(express.json());
 
 // importing routes
